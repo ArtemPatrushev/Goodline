@@ -1,0 +1,138 @@
+.wrapper {
+    margin-top: 64px;
+    text-align: center;
+    margin-bottom: 108px;
+    @media(max-width: 376px) {
+        margin-top: 24px;
+        margin-bottom: 59px;
+    }
+    & > p{
+        font-family: 'Roboto Condensed';
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #313334;
+        margin-bottom: 38px;
+    }
+    .acquireTypes {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        gap: 35px;
+        grid-template-areas: 'a b c d';
+        @media(max-width: 376px) {
+            grid-template-areas: 
+                'b c' 
+                'd a';
+            gap: 15px;
+        }
+        .acquireTypesItem {
+            width: 213px;
+            height: 213px;
+            background: linear-gradient(180deg, #8CB928 0%, #45AE4D 100%);
+            border-radius: 18px;
+            box-shadow: 0px 25px 100px #48AE4B;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            @media(max-width: 376px) {
+                width: 160px;
+                height: 160px;
+            }
+            & > img {
+                margin-bottom: 12px;
+            }
+            & > p {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFFFFF;
+                margin-top: 15px;
+            }
+            .acquireTypesItem__bottomText {
+                margin-top: 0;
+                @media(max-width: 376px) {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            .acquireTypesItem__text {
+                @media(max-width: 376px) {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            .acquireTypesItem__package {
+                display: flex;
+                & > img:not(:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+.marginBottomTextMin {
+    margin-bottom: 20px;
+}
+
+.marginBottomTextMax {
+    margin-bottom: 30px;
+}
+
+.gridArea_A {
+    grid-area: 'a';
+    @media(max-width: 376px) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+}
+
+.gridArea_B {
+    grid-area: 'b';
+}
+
+.gridArea_C {
+    grid-area: 'c';
+}
+
+.gridArea_D {
+    grid-area: 'd';
+}
+
+.purchaseImg {
+    @media(max-width: 376px) {
+        width: 29px;
+    }
+}
+
+.installmentPlan {
+    @media(max-width: 376px) {
+        width: 81px;
+    }
+}
+
+.hundredImg {
+    @media(max-width: 376px) {
+        width: 34px;
+    }
+}
+
+.wiFiImg {
+    @media(max-width: 376px) {
+        width: 32px;
+    }
+}
+
+.btvImg {
+    @media(max-width: 376px) {
+        width: 30px;
+    }
+}
+
+.purchaseSmallImg {
+    @media(max-width: 376px) {
+        width: 24px;
+    }
+}

@@ -1,0 +1,102 @@
+.PopUp {
+    width: 720px;
+    height: 698px;
+    box-shadow: 0px 25px 100px #48AE4B;
+    background: linear-gradient(180deg, #8CB928 0%, #45AE4D 100%);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: calc(50% + 698px / 2);
+    right: 156px;
+    @media(max-width: 376px) {
+        width: 100%;
+        height: auto;
+        top: 48px;
+        right: 0;
+        padding: 27px;
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 0;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+    }
+    .PopUp__content {
+        display: grid;
+        grid-template-rows: repeat(3, 196px);
+        grid-template-columns: repeat(2, 311px);
+        gap: 18px;
+        @media(max-width: 376px) {
+            grid-template-rows: repeat(6, 177px);
+            grid-template-columns: 1fr;
+        }
+        .PopUp__item {
+            box-sizing: border-box;
+            padding: 35px 18px;
+            background: #FFFFFF;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            .PopOp__item__round {
+                border-radius: 50%;
+                width: 126px;
+                height: 126px;
+                background: linear-gradient(180deg, #8BB928 0%, #45AE4D 100%);
+                box-shadow: 0px 10px 40px #45AE4D;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 19px;
+            }
+            & > p {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 23px;
+                color: #313334;
+                width: 135px;
+            }
+        }
+    }
+}
+
+.PopUpLayer {
+    position: absolute;
+    width: 720px;
+    height: 698px;
+    background: linear-gradient(180deg, #8CB928 0%, #45AE4D 100%);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    @media(max-width: 376px) {
+        width: 100%;
+        height: auto;
+        top: 0;
+        right: 0;
+        padding: 27px;
+        box-sizing: border-box;
+    }
+}
+
+.leftPopUp__backImg {
+    position: absolute;
+    top: calc(50% - 620px / 2);
+    left: -240px;
+    z-index: 0;
+    @media(max-width: 376px) {
+        display: none;
+    }
+}
+.leftPopUp__close {
+    position: absolute;
+    top: calc(50% - 52px / 2);
+    left: -87px;
+    @media(max-width: 376px) {
+        top: 1270px;
+        left: calc(50% - 52px / 2);
+    }
+}
