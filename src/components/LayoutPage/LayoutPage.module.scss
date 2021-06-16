@@ -5,8 +5,10 @@
 
 .layout {
     background: #fff;
+    position: relative;
     .container {
         max-width: 960px;
         margin: 0 auto;
+        height: 100%;
     }
 }

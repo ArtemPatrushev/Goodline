@@ -9,8 +9,8 @@
     justify-content: center;
     position: absolute;
     z-index: 10;
-    top: calc(50% + 698px / 2);
-    right: 156px;
+    top: calc(50% - 698px / 2);
+    right: calc(50% - 960px / 2);
     @media(max-width: 376px) {
         width: 100%;
         height: auto;
